@@ -1,15 +1,14 @@
 {
-    "name": "Code Stitch Web Designs",
-    "email": "help@codestitch.app",
-    "phoneForTel": "555-779-4407",
-    "phoneFormatted": "(555) 779-4407",
-    "address": {
-        "lineOne": "First Address Line",
-        "lineTwo": "Second Address Line",
-        "city": "Denver",
-        "state": "CO",
-        "zip": "80206",
-        "mapLink": "https://goo.gl/maps/UAQn4vuGDiwv7DV39"
-    },
-    "domain": "https://www.codestitch.app"
+  "name": "J. Alexander Acoustic Guitars",
+  "email": "jeff@jalexanderguitars.com",
+  "phoneForTel": "602-571-6665",
+  "phoneFormatted": "(602) 571-6665",
+  "address": {
+    "lineOne": "15406 S 16th PL",
+    "city": "Phoenix",
+    "state": "AZ",
+    "zip": "85048",
+    "mapLink": "https://maps.app.goo.gl/kYfEMHkp5zCCeMUi6"
+  },
+  "domain": "https://www.jalexanderguitars.com"
 }

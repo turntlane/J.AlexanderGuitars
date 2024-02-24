@@ -494,6 +494,7 @@
     height: 5rem;
     position: absolute;
     top: -2.5rem;
+    border-radius: 50%;
   }
   #reviews .cs-item-p {
     font-size: 1rem;

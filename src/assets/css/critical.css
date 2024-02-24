@@ -3,21 +3,18 @@
 <---           Hero             -->
 <--- -------------------------- -*/
 /* Mobile - 360px */
-@media only screen and (min-width: 0em) {
-  #hero {
-    font-family: "Roboto", "Arial", sans-serif;
+@media only screen and (min-width: 0rem) {
+  #hero-1427 {
     /* Centers button */
     text-align: center;
-    /* changes on tablet */
-    padding: 0 1rem;
-    padding-bottom: 6.25rem;
+    /* 200px - 300px - leaving extra space for the navigation */
+    padding: clamp(12.5rem, 25.95vw, 18.75em) 1rem;
+    /* prevents the topper line from causing an overflow */
+    overflow: hidden;
     position: relative;
     z-index: 1;
-    /* prevents overflow from the lines extending past the screen width */
-    overflow: hidden;
   }
-  #hero .cs-picture {
-    /* Background Image */
+  #hero-1427 .cs-background {
     width: 100%;
     height: 100%;
     display: block;
@@ -26,272 +23,284 @@
     left: 0;
     z-index: -2;
   }
-  #hero .cs-picture:before {
-    /* Black Color Overlay */
+  #hero-1427 .cs-background:before {
+    /* Overlay */
     content: "";
     width: 100%;
     height: 100%;
     background: #000;
-    opacity: 0.7;
-    display: block;
+    opacity: 0.48;
     position: absolute;
+    display: block;
     top: 0;
     left: 0;
     z-index: 1;
     /* prevents the cursor from interacting with it */
     pointer-events: none;
   }
-  #hero .cs-picture img {
-    width: 100%;
-    height: 100%;
-    /* Makes image act like a background-image */
-    object-fit: cover;
+  #hero-1427 .cs-background img {
     position: absolute;
     top: 0;
     left: 0;
-  }
-  #hero .cs-container {
+    height: 100%;
     width: 100%;
-    max-width: 80em;
+    object-fit: cover;
+  }
+  #hero-1427 .cs-container {
+    width: 100%;
+    max-width: 80rem;
     margin: auto;
-    /* we put the padding top and bottom on the container instead of #Hero so the pseudo element lines go to the top and bottom of the section */
-    /* 144px - 280px - leaving extra space for the navigation */
-    /* changes on tablet */
-    padding: clamp(9em, 25.95vw, 17.5em) 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 3rem;
+  }
+  #hero-1427 .cs-content {
+    text-align: left;
+    width: 100%;
+    max-width: 39.375rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  #hero-1427 .cs-topper {
+    /* 13px - 16px */
+    font-size: clamp(0.8125rem, 1.5vw, 1rem);
+    line-height: 1.2em;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-align: inherit;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    color: var(--secondary);
+    display: inline-block;
     position: relative;
   }
-  #hero .cs-container:before {
-    /* Left Line */
-    content: "";
-    width: 1px;
-    height: 100%;
-    background: -moz-linear-gradient(top, rgba(250, 251, 252, 0.5) 0%, rgba(250, 251, 252, 0) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, rgba(250, 251, 252, 0.5) 0%, rgba(250, 251, 252, 0) 100%); /* Chrome10-25,Safari5.1-6 */
-    opacity: 1;
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-  #hero .cs-flex-group {
-    width: 80vw;
-    /* 464px - 562px */
-    max-width: clamp(29em, 60vw, 35.125em);
-    margin: auto;
-    /* 60px - 220px */
-    margin-bottom: clamp(3.75em, 15.5vw, 13.75em);
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-wrap: wrap;
-  }
-  #hero .cs-topper {
-    text-align: center;
-    margin-bottom: 1rem;
-    color: var(--primary);
-  }
-  #hero .cs-title {
-    text-align: center;
-    width: 100%;
-    color: var(--bodyTextColorWhite);
-  }
-  #hero .cs-text {
-    text-align: center;
-    /* 32px - 40px */
-    margin: 0 auto clamp(2rem, 4vw, 2.5rem) 0;
-    /* 40px - 48px */
-    margin-bottom: clamp(2.5rem, 4vw, 3rem);
-    color: var(--bodyTextColorWhite);
-  }
-  #hero .cs-button-solid {
-    line-height: clamp(2.875em, 5.5vw, 3.5em);
-    height: initial;
-    margin-bottom: 1rem;
-  }
-  #hero .cs-button-transparent {
-    font-size: 1rem;
+  #hero-1427 .cs-title {
+    /* 39px - 61px */
+    font-size: clamp(2.4375rem, 6.4vw, 3.8125rem);
     font-weight: 700;
-    /* 46px - 56px */
-    line-height: clamp(2.875em, 5.5vw, 3.5em);
-    text-decoration: none;
-    width: 11.25rem;
-    /* 46px - 56px */
-    height: clamp(2.875em, 5.5vw, 3.5em);
-    margin: 0 0.5rem;
-    box-sizing: border-box;
-    padding: 0;
+    line-height: 1.2em;
+    text-align: inherit;
+    max-width: 51.8125rem;
+    /* 16px - 24px */
+    margin: 0 auto clamp(1rem, 4vw, 1.5rem) 0;
     color: #fff;
-    background-color: transparent;
-    border: 1px solid var(--bodyTextColorWhite);
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
+    position: relative;
+  }
+  #hero-1427 .cs-text {
+    /* 16px - 20px */
+    font-size: clamp(1rem, 1.95vw, 1.25rem);
+    line-height: 1.5em;
+    text-align: inherit;
+    width: 100%;
+    /* 464px - 622px */
+    max-width: clamp(29rem, 60vw, 38.785rem);
+    margin: 0;
+    margin-bottom: 2rem;
+    color: #fff;
+  }
+  #hero-1427 .cs-button-group {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  #hero-1427 .cs-button-solid {
+    font-size: 1rem;
+    /* 46px - 56px */
+    line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    min-width: 12.5rem;
+    padding: 0 1.5rem;
+    background-color: var(--primary);
+    border-radius: 0.5rem;
+    display: inline-block;
     position: relative;
     z-index: 1;
+    /* prevents padding from adding to the width */
+    box-sizing: border-box;
   }
-  #hero .cs-button-transparent:before {
+  #hero-1427 .cs-button-solid:before {
     content: "";
-    background: #000;
-    opacity: 1;
-    display: block;
     position: absolute;
-    /* so it sits on top of the border */
-    top: -1px;
-    right: -1px;
-    bottom: -1px;
-    left: -1px;
-    z-index: -1;
-    /* this is what creates the grow affect on hover */
-    transform: scaleX(0);
-    transition: transform 0.3s;
-    transform-origin: left;
-  }
-  #hero .cs-button-transparent:hover:before {
-    transform: scaleX(1);
-  }
-  #hero .cs-button-transparent .cs-img {
-    margin-right: 0.75rem;
-    display: block;
-  }
-}
-/* Tablet - 768px */
-@media only screen and (min-width: 48em) {
-  #hero {
-    /* 32px - 40px */
-    padding: 0 clamp(2em, 5vw, 2.5em);
-  }
-  #hero .cs-container {
-    padding: clamp(7em, 27.95vw, 17.5em) 0 clamp(9em, 30.95vw, 23.5em) 0;
-  }
-  #hero .cs-container:after {
-    /* Right Line */
-    content: "";
-    width: 1px;
     height: 100%;
-    background: -moz-linear-gradient(top, rgba(250, 251, 252, 0) 0%, rgba(250, 251, 252, 0.5) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, rgba(250, 251, 252, 0) 0%, rgba(250, 251, 252, 0.5) 100%); /* Chrome10-25,Safari5.1-6 */
+    width: 0%;
     opacity: 1;
-    display: block;
-    position: absolute;
     top: 0;
-    right: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 0.25rem;
+    transition: width 0.3s;
   }
-  #hero .cs-button-solid {
-    margin-right: 1.25rem;
-    margin-bottom: 0;
+  #hero-1427 .cs-button-solid:hover:before {
+    width: 100%;
   }
-}
-/* Desktop Parallax Effect - 1300px */
-@media only screen and (min-width: 81.25em) {
-  #hero {
-    background: url("/assets/images/landing.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    /* creates parallax effect on background image */
-    background-attachment: fixed;
+  #hero-1427 .cs-button1 {
+    background-color: var(--secondaryLight);
+    color: var(--primary);
   }
 }
 /* Dark Mode */
-@media only screen and (min-width: 0em) {
-  body.dark-mode #hero .cs-background:before {
-    opacity: 0.8;
+@media only screen and (min-width: 0rem) {
+  body.dark-mode #hero-1427 .cs-background:before {
+    opacity: 0.72;
   }
 }
 /*-- -------------------------- -->
 <---          Services          -->
 <--- -------------------------- -*/
-/* Mobile */
-@media only screen and (min-width: 0em) {
-  .services {
-    width: 90%;
-    max-width: 82.5em;
-    margin: auto;
-    margin-top: -10.4375em;
-    margin-bottom: 3.125em;
-    padding: 3.125em 1.25em;
-    background: #fff;
-    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.05);
-    border-top: 0.375em solid var(--primary);
-    border-radius: 0.3125em;
-    position: relative;
-    z-index: 100;
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #services-26 {
+    /* Centers the button */
+    text-align: center;
+    padding: var(--sectionPadding);
   }
-  .services .card {
+  #services-26 .cs-container {
     width: 100%;
-    max-width: 22.3125em;
+    max-width: 80rem;
     margin: auto;
-    margin-bottom: 3.125em;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
   }
-  .services .card:last-of-type {
-    margin-bottom: 0;
+  #services-26 .cs-card-group {
+    width: 100%;
+    /* changes to 100% at tablet */
+    max-width: 31.25rem;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #a0a3bd;
   }
-  .services .card picture {
-    width: 5.5em;
-    height: 5.5em;
+  #services-26 .cs-item {
+    width: 100%;
     margin: auto;
-    margin-bottom: 1.4375em;
-    background: var(--primary);
-    border-radius: 50%;
+    list-style: none;
+    border-bottom: 1px solid #a0a3bd;
+    background-color: #fff;
+    transition: background-color 0.3s;
+  }
+  #services-26 .cs-item:hover {
+    background-color: var(--primary);
+  }
+  #services-26 .cs-item:hover .cs-icon {
+    filter: grayscale(1) brightness(1000%);
+  }
+  #services-26 .cs-item:hover .cs-h3 {
+    color: #fff;
+  }
+  #services-26 .cs-link {
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    padding-top: 3.5rem;
+    padding-bottom: 3.25rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    /* Prevents padding from affecting height */
+    box-sizing: border-box;
+  }
+  #services-26 .cs-icon {
+    margin-bottom: 1.125rem;
+  }
+  #services-26 .cs-hover {
+    display: none;
+  }
+  #services-26 .cs-h3 {
+    font-size: 1.25rem;
+    line-height: 1.2em;
+    font-weight: 400;
+    text-align: center;
+    margin: 0;
+    color: var(--headerColor);
+    transition: color 0.3s;
+  }
+}
+/* In Between - 500px */
+@media only screen and (min-width: 31.25rem) {
+  #services-26 .cs-card-group {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
   }
-  .services .card picture img {
-    width: 3em;
-    height: 3em;
+  #services-26 .cs-item {
+    width: 50%;
+    max-width: 18.4375rem;
+    border-bottom: none;
+    /* Makes borders not affect widths */
+    box-sizing: border-box;
   }
-  .services .card h2 {
-    font-size: 2em;
-    font-weight: 700;
-    line-height: 1.35em;
-    text-align: center;
-    margin-bottom: 0.65em;
-    color: #1a1a1a;
+  #services-26 .cs-item:nth-of-type(1) {
+    border-right: 1px solid #a0a3bd;
+    border-bottom: 1px solid #a0a3bd;
   }
-  .services .card p {
-    line-height: 1.3333333333em;
-    text-align: center;
+  #services-26 .cs-item:nth-of-type(2) {
+    border-bottom: 1px solid #a0a3bd;
+  }
+  #services-26 .cs-item:nth-of-type(3) {
     width: 100%;
-    opacity: 0.7;
   }
 }
-/* Inbetween */
-@media only screen and (min-width: 768px) {
-  .services {
-    font-size: min(1.8vw, 1em);
-    width: 98%;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #services-26 .cs-card-group {
+    max-width: 100%;
+    border: none;
   }
-  .services .card {
-    max-width: 20.3125em;
+  #services-26 .cs-item {
+    height: 13.125rem;
+    width: 33.33%;
     margin: 0;
   }
+  #services-26 .cs-item:nth-of-type(1) {
+    border: none;
+    border: 1px solid #a0a3bd;
+  }
+  #services-26 .cs-item:nth-of-type(2) {
+    border: none;
+    border-top: 1px solid #a0a3bd;
+    border-bottom: 1px solid #a0a3bd;
+    border-right: 1px solid #a0a3bd;
+  }
+  #services-26 .cs-item:nth-of-type(3) {
+    width: 33.33%;
+    border: none;
+    border-top: 1px solid #a0a3bd;
+    border-bottom: 1px solid #a0a3bd;
+    border-right: 1px solid #a0a3bd;
+  }
+  #services-26 .cs-link {
+    padding: 2.25rem 0;
+  }
+  #services-26 .cs-icon {
+    margin-bottom: 1.75rem;
+  }
 }
-/* Large Desktop */
-@media only screen and (min-width: 1300px) {
-  .services {
-    padding: 3.125em 5em;
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode #services-26 .cs-h3 {
+    color: var(--bodyTextColorWhite);
   }
-  .services .card {
-    max-width: 22.3125em;
+  body.dark-mode #services-26 .cs-icon {
+    /* turns it white */
+    filter: grayscale(1) brightness(1000%);
   }
-}
-/* Dark mode */
-@media only screen and (min-width: 0em) {
-  body.dark-mode #services {
-    background: var(--medium);
+  body.dark-mode #services-26 .cs-item {
+    background-color: var(--dark);
   }
-  body.dark-mode #services picture {
-    background: var(--primaryDark);
-  }
-  body.dark-mode #services h2 {
-    font-weight: bold;
-    color: #fff;
+  body.dark-mode #services-26 .cs-item:hover {
+    background-color: var(--primary);
   }
 }
 

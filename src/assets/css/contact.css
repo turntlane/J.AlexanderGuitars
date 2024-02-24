@@ -14,7 +14,7 @@
     --sectionPadding: clamp(3.75em, 7.82vw, 6.25em) 1rem;
   }
   #cs-contact {
-    font-family: "Roboto", "Arial", sans-serif;
+    font-family: "Montserrat-Regular", "Arial", sans-serif;
     padding: var(--sectionPadding);
   }
   #cs-contact .cs-container {
@@ -80,7 +80,7 @@
     border: 1px solid var(--primary);
   }
   #cs-contact #cs-form textarea {
-    font-family: inherit;
+    font-family: "Lato-Regular", "Arial", sans-serif;
     min-height: 7.5rem;
     padding-top: 1.25rem;
   }
