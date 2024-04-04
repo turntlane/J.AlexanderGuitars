@@ -6,8 +6,8 @@ J. Alexander Guitars is a website for J. Alexander Acoustic Guitars and Lutherie
 
 ## Developer
 
-J. Alexander Guitars was hand coded and created by Cactus Web Designs
+J. Alexander Guitars was hand coded and created by [Cactus Web Designs](https://cactuswebdesigns.com/)
 
 ## Designed, Coded, and Maintained
 
-Cactus Web Designs
+[Cactus Web Designs](https://cactuswebdesigns.com/)
