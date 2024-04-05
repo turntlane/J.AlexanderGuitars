@@ -987,7 +987,7 @@ html {
     transition: color 0.3s;
   }
   #footer .right-section .lists ul li a:hover {
-    color: var(--primary);
+    color: #fff;
   }
   #footer .right-section .lists ul h2 {
     font-size: 1.125rem;
@@ -1033,7 +1033,7 @@ html {
   #footer .credit a {
     font-size: 1rem;
     text-decoration: none;
-    color: var(--primary);
+    color: #fff;
   }
   #footer .credit a:hover {
     text-decoration: underline;
@@ -1096,7 +1096,7 @@ html {
     content: "";
     width: 0%;
     height: 0.125rem;
-    background: var(--primary);
+    background: #fff;
     opacity: 1;
     display: block;
     position: absolute;

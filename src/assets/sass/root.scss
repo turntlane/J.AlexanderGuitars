@@ -1147,7 +1147,7 @@ html {
               color: #fff;
               transition: color 0.3s;
               &:hover {
-                color: var(--primary);
+                color: #fff;
               }
             }
           }
@@ -1202,7 +1202,7 @@ html {
       a {
         font-size: calc(16 / 16 * 1rem);
         text-decoration: none;
-        color: var(--primary);
+        color: #fff;
 
         &:hover {
           text-decoration: underline;
@@ -1276,7 +1276,7 @@ html {
                 content: "";
                 width: 0%;
                 height: calc(2 / 16 * 1rem);
-                background: var(--primary);
+                background: #fff;
                 opacity: 1;
                 display: block;
                 position: absolute;
